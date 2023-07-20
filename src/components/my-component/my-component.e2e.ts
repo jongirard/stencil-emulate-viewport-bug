@@ -9,6 +9,9 @@ describe('my-component', () => {
     expect(element).toHaveClass('hydrated');
   });
 
+  // This test fails unexpectedly due to emulate viewport width not overriding 
+  // (browser width less than 934px wide)
+  
   it('can click the desktop content', async () => {
     const page = await newE2EPage();
 
