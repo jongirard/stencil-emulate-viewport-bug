@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+
+  @media only screen and (max-width: 934px) { 
+    display: flex;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @media only screen and (min-width: 935px) { 
+    display: flex;
+  }
+}
